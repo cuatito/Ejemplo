@@ -30,10 +30,10 @@
         {
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtNumero1 = new System.Windows.Forms.TextBox();
-            this.txtResultado = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtSeleccion = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnCalcular
@@ -53,13 +53,7 @@
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(100, 20);
             this.txtNumero1.TabIndex = 1;
-            // 
-            // txtResultado
-            // 
-            this.txtResultado.Location = new System.Drawing.Point(59, 199);
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(178, 20);
-            this.txtResultado.TabIndex = 2;
+            this.txtNumero1.TextChanged += new System.EventHandler(this.txtNumero1_TextChanged);
             // 
             // comboBox1
             // 
@@ -77,7 +71,7 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(59, 238);
+            this.btnSalir.Location = new System.Drawing.Point(69, 235);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(146, 43);
             this.btnSalir.TabIndex = 4;
@@ -92,15 +86,23 @@
             this.txtSeleccion.Size = new System.Drawing.Size(107, 20);
             this.txtSeleccion.TabIndex = 5;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(69, 116);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 108);
+            this.listBox1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 302);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.txtSeleccion);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.txtNumero1);
             this.Controls.Add(this.btnCalcular);
             this.Name = "Form1";
@@ -114,10 +116,10 @@
 
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtNumero1;
-        private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtSeleccion;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

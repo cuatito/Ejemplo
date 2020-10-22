@@ -8,3 +8,13 @@ C:\Users\ACER-PC\Desktop\EJEMPLO GIT-GITHUB\Ejemplo\obj\Debug\Ejemplo.csproj.Gen
 C:\Users\ACER-PC\Desktop\EJEMPLO GIT-GITHUB\Ejemplo\obj\Debug\Ejemplo.csproj.CoreCompileInputs.cache
 C:\Users\ACER-PC\Desktop\EJEMPLO GIT-GITHUB\Ejemplo\obj\Debug\Ejemplo.exe
 C:\Users\ACER-PC\Desktop\EJEMPLO GIT-GITHUB\Ejemplo\obj\Debug\Ejemplo.pdb
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\bin\Debug\Ejemplo.exe.config
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\bin\Debug\Ejemplo.exe
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\bin\Debug\Ejemplo.pdb
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csprojAssemblyReference.cache
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.Form1.resources
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.Properties.Resources.resources
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csproj.GenerateResource.cache
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.csproj.CoreCompileInputs.cache
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.exe
+C:\Users\CUATITO-PC\Desktop\Ejemplo\Ejemplo\obj\Debug\Ejemplo.pdb
