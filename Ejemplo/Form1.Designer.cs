@@ -91,6 +91,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(69, 116);
             this.listBox1.Name = "listBox1";
+            this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.listBox1.Size = new System.Drawing.Size(120, 108);
             this.listBox1.TabIndex = 6;
             // 
@@ -106,6 +107,7 @@
             this.Controls.Add(this.txtNumero1);
             this.Controls.Add(this.btnCalcular);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Programa de Ejemplos";
             this.ResumeLayout(false);
             this.PerformLayout();

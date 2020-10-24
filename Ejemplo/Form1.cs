@@ -19,7 +19,7 @@ namespace Ejemplo
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            
+            listBox1.Items.Clear();
             txtSeleccion.Text = comboBox1.SelectedIndex.ToString();
             switch (comboBox1.SelectedIndex)
             {           
@@ -30,10 +30,15 @@ namespace Ejemplo
                     break;
                 case 0:
                     // OPCION NUMERO PRIMO
-                    //txtSeleccion.Text = comboBox1.SelectedIndex.ToString();
-                    //MessageBox.Show("Has Seleccionado la Opcion: " + comboBox1.SelectedItem.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     Primos(txtNumero1.Text);
-                    
+                    break;
+                case 1:
+                    // OPCION NUMERO PRIMO
+                    //Fibonacci(txtNumero1.Text);
+                    break;
+                case 2:
+                    // OPCION NUMERO PRIMO
+                    Factorial(txtNumero1.Text);
                     break;
                 default:
                     break;
@@ -50,7 +55,7 @@ namespace Ejemplo
             int cont=0;
             int cpi=0;
             int N = Convert.ToInt32(Num);
-            for(int i=N;i>0;--i)
+            for(int i=0;i<=N;++i)
             {
                 for(int j=1;j<=N;j++)
                 {
@@ -61,18 +66,25 @@ namespace Ejemplo
                 }
                 if(cont<3)
                 {
-                    if(cpi<=4)
+                    if(cpi<=N)
                     {
-                        listBox1.Items.Add(i);
+                        listBox1.Items.Add(i.ToString("N0"));
                         cpi++;
                     }
                 }
                 cont = 0;
             }
-
-
         }
 
+        private void Factorial (String Num)
+        {
+            Double R=1;
+            for(int i=2; i<=Convert.ToInt32(Num); ++i)
+            {
+                R = R * i;
+            }
+            listBox1.Items.Add(R.ToString("N0"));
+        }
         private void txtNumero1_TextChanged(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
