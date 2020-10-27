@@ -20,13 +20,12 @@ namespace Ejemplo
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            txtSeleccion.Text = comboBox1.SelectedIndex.ToString();
             switch (comboBox1.SelectedIndex)
             {           
                 case -1: 
                     // SELECCIONA OPCION
-                    txtSeleccion.Text = comboBox1.SelectedIndex.ToString();
                     MessageBox.Show("Selecciona Opcion","Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    comboBox1.Focus();
                     break;
                 case 0:
                     // OPCION NUMERO PRIMO
@@ -34,7 +33,7 @@ namespace Ejemplo
                     break;
                 case 1:
                     // OPCION NUMERO PRIMO
-                    //Fibonacci(txtNumero1.Text);
+                    Fibonacci(txtNumero1.Text);
                     break;
                 case 2:
                     // OPCION NUMERO PRIMO
@@ -85,6 +84,26 @@ namespace Ejemplo
             }
             listBox1.Items.Add(R.ToString("N0"));
         }
+
+        private void Fibonacci(string Num)
+        {
+            int primero=0,segundo=1, siguiente;
+            for (int i=0;i<=Convert.ToInt32( Num);++i)
+            {
+                if(i<=1)
+                {
+                    siguiente = i;
+                }
+                else
+                {
+                    siguiente = primero + segundo;
+                    primero = segundo;
+                    segundo = siguiente;
+                    listBox1.Items.Add(siguiente.ToString("N0"));
+                }
+            }
+        }
+
         private void txtNumero1_TextChanged(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
